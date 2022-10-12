@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        1.전체 선택자:
+        전체 태그 body,head,html까지도 적용 가능 */
+        /* * {
+            color: aquamarine;
+            font-size: 20px;
+        } */
+        /* 태그(타입) 선택자 */
+        span {
+            color: red;
+        }
+        /* 클래스 선택자: 공통적으로 스타일을 적용할때 */
+        /* .title{
+            color: green;
+            font-size: 30px;
+        }
+        .on {
+            font-style: italic;
+        } */
+        /* id 선택자:  */
+        /* #board{
+            color: tomato;
+        }
+        #contents{
+            color: brown;
+        } */
+        #board, #contents, .title, span {
+            color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <!-- class명은 의미가 있는 이름으로 -->
+    <!-- class 이름은 여러개 만들 수 있다. -->
+    <!-- id명은 의미가 있는 이름으로 각각 다르게 해줘야 한다.(중복x) -->
+    <h1 class="title2 on" id="board">자유게시판</h1>
+    <p class="title2" id="contents">안녕하세요 반갑습니다.</p>
+    <p>안녕하세요 반갑습니다.</p>
+    <span class="title on">태그입니다</span>
+    <form>
+        <input type="text" name="user_id" id="user_id">
+    </form>
+    </html>
