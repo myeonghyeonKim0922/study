@@ -68,7 +68,8 @@ body {
 
 
 /* input타입이 text,password,tel,email */
-#signup input[type=text], #signup input[type=password], #signup input[type=tel], #signup input[type=email] {
+#signup input[type=text], #signup input[type=password], 
+#signup input[type=tel], #signup input[type=email] {
     border: 1px solid #ccc;
     border-radius: 3px;
     font-size: 13px;
