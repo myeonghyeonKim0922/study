@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sk</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {text-decoration: none !important;}
+        img {border: 0;}
+        ul {list-style: none;}
+        header, footer, section {box-sizing: border-box;}
+        ul li {
+            list-style: none;
+        }
+
+        .wrap {
+            background: #fff;
+        }
+        /* 0 ~ 766px */
+        /* 767px ~ 1023 */
+        .header {
+            max-width: 100%;
+            height: 70px;
+            background: red;
+             margin: 0 auto;
+        }
+        .header__nav {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .header__nav > h1 {
+            background: blue;
+            margin: 15px;
+            margin-top: 12px;
+            width: 272px;
+            height: 46px;
+        }
+
+        .header__nav > .in__site {
+            margin-left: 150px;
+            width: 400px;
+            height: 70px;
+            background: #eee;
+        }
+
+        .header__nav > .in__site > ul li {
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 12.50%;
+        }
+
+        .serch {
+            height: 70px;
+            background: darkgoldenrod;
+        }
+
+        .out__site {
+            width: 150px;
+            height: 70px;
+            background: salmon;
+        }
+
+        .out__site ul {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .out__site ul li {
+            margin: 10px;
+        }
+
+        .lang {
+            height: 70px;
+            background: green;
+        }
+
+        .quick {
+            width: 50px;
+            background: lightcyan;
+        }
+
+
+        .intro {
+            background: yellow;
+            width: 100%;
+            height: 743.11px;
+        }
+
+        .gateway__title {
+            background: rebeccapurple;
+            height: 83px;
+        }
+
+        .gateway {
+            background: orange;
+            height: 457px;
+        }
+
+        .gateway__content > ul {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .gateway__content > ul > li {
+            flex: 1;
+            text-align: center;
+        }
+
+        .highlight__title {
+            width: 100%;
+            height: 83px;
+            background: magenta;
+        }
+
+        .highlight {
+            height: 700px;
+        }
+
+        .highlight__content {
+            background: honeydew;
+        }
+
+        .highlight__content ul {
+            overflow: hidden;
+            width: 79.44%;
+            margin: 0 auto;
+        }
+
+        .highlight__content ul li {
+            float: left;
+            width:  50%;
+            text-align: center;
+            height: 350px;
+        }
+
+        .footer {
+            height: 200px;
+            background: lavender;
+        }
+
+        @media all and (min-width:767px) {
+
+        }
+        /* 1024 이상 */
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header__nav">
+          <h1>logo</h1>
+          <nav class="in__site">
+            <ul>
+                <li class="">소개</li>
+                <li>센터</li>
+                <li>가치</li>
+                <li>채용</li>
+            </ul>
+          </nav>
+          <div class="serch">serch</div>
+          <nav class="out__site">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+          </nav>
+          <div class="lang">언어설정</div>
+          <div class="quick">퀵링크</div>
+        </div>
+    </header>
+    <main class="wrap">
+        <section class="intro">
+            <div class="intro__vidio">
+                <p>유튜브 영상</p>
+            </div>
+        </section>
+        
+            <h2 class="gateway__title">sk gateway</h2>
+            <section class="gateway">
+                <div class="gateway__content con">
+                <ul class="gateway__list">
+                    <li>뉴스</li>
+                    <li>계열사</li>
+                    <li>채용</li>
+                    <li>유튜브</li>
+                </ul>
+            </div>
+        </section>
+        <h2 class="highlight__title">sk highlight</h2>
+        <section class="highlight">
+            <div class="highlight__content con">
+                <ul class="highlight__list">
+                    <li>뉴스1</li>
+                    <li>뉴스2</li>
+                    <li>뉴스3</li>
+                    <li>뉴스4</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer"></footer>
+</body>
+</html>
