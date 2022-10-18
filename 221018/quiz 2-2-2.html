@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const cm = Number(prompt("본인의 키를 입력하세요"))
+        if (cm >= 150) {
+            console.log("놀이기구 탑승 가능!")
+        } else {
+            var alone = confirm("부모님과 동행입니까?")
+            if (alone === false){
+                console.log("어른이랑 같이 오렴")
+            } else {
+                console.log("좋은 시간 보내렴")
+            }
+        } 
+        
+    </script>
+</body>
+</html>

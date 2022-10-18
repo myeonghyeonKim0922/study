@@ -21,15 +21,17 @@
 
         .wrap {
             background: #fff;
+            width: 1500px;
         }
         /* 0 ~ 766px */
         /* 767px ~ 1023 */
-        .header {
+        .header{
             max-width: 100%;
             height: 70px;
             background: red;
-             margin: 0 auto;
+            margin: 0 auto;
         }
+        
         .header__nav {
             display: flex;
             flex-direction: row;
@@ -141,19 +143,42 @@
         }
 
         .footer {
-            height: 200px;
+            height: 100px;
+            position: relative;
+            bottom: 0;
             background: lavender;
+            width: 100%;
         }
 
-        @media all and (min-width:767px) {
-
+        @media all and (max-width:767px) {
+            .wrap {
+                width: 100vw;
+            }
         }
         /* 1024 이상 */
+
+        @media all and (min-width:768px) {
+             .wrap {
+                width: 100vw;
+            }
+             .gateway li:nth-last-child(1) {
+                display: none;
+             }
+        }
+
+        @media all and (max-width:550px){
+            .highlight__list {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
 
     </style>
 </head>
 <body>
     <header class="header">
+        </div>
         <div class="header__nav">
           <h1>logo</h1>
           <nav class="in__site">
@@ -189,10 +214,10 @@
             <section class="gateway">
                 <div class="gateway__content con">
                 <ul class="gateway__list">
-                    <li>뉴스</li>
-                    <li>계열사</li>
-                    <li>채용</li>
-                    <li>유튜브</li>
+                    <li class="1">뉴스</li>
+                    <li class="2">계열사</li>
+                    <li class="3">채용</li>
+                    <li class="4">유튜브</li>
                 </ul>
             </div>
         </section>
@@ -208,6 +233,6 @@
             </div>
         </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">footer</footer>
 </body>
 </html>
