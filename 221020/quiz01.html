@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function years(year){
+    //       if (year % 4 == 0 && year % 100 == 0 && year % 400 == 0){
+    //         console.log("윤년입니다.") 
+    //     } else if (year % 4 == 0 && year % 100 == 0 ){
+    //         console.log("평년입니다.")
+    //     } else if(year % 4 == 0){
+    //        console.log("윤년입니다.")
+    //     } else {
+    //         console.log("평년입니다")
+    //     }
+    //     return years;
+    // }
+    //     leap_year = years(Number(prompt("년도를 입력하세요")))
+    //     console.log(leap_year)
+        // }
+        function isLeapYear(year=new Date().getFullYear()){
+            return ( year % 4 ===0 ) && (year % 100 !== 0 ) || (year % 400 === 0) 
+        }
+        console.log(isLeapYear())
+    </script>
+</body>
+</html>
