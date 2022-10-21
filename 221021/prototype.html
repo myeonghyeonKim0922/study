@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //3. prototype방식
+        //객체 = 속성 + 메소드
+        function Pet(name, age, type){
+            //속성
+            this.name = name
+            this.age = age
+            this.type = type
+        }
+        //객체명.prototype.함수명 = function() {}
+        Pet.prototype.eat = function(food){
+            console.log(`\n${this.name}(이)가 ${food}(을)를 먹습니다.`)
+        }
+        Pet.prototype.agePrint = function(){
+            console.log(`${this.name}(은)는 ${this.age}살 입니다.`)
+        }
+        Pet.prototype.typePrint = function(){
+            console.log(`${this.name}(은)는 ${this.type}입니다.`)
+
+        }
+        const pet = new Pet("구름", 7 ,"페르시안")
+        const pet2 = new Pet("달", 10, "샴")
+        const pet3 = new Pet("별", 2, "스핑크스")
+        const pet4 = new Pet("해", 4, "?")
+
+        pet.eat("개껌")
+        pet.agePrint()
+        pet.typePrint()
+        
+        pet2.eat("사료")
+        pet2.agePrint()
+        pet2.typePrint()
+
+
+        pet3.eat("뼈다귀")
+        pet3.agePrint()
+        pet3.typePrint()
+
+
+        pet4.eat("?")
+        pet4.agePrint()
+        pet4.typePrint()
+
+    </script>
+</body>
+</html>
