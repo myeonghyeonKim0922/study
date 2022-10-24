@@ -24,13 +24,13 @@
         function calculate(){
             //계산 결과를 보여준다.
             //toFixed(2):소수점 두자리까지만 출력
-            span.textContent = (calculate * transVal).toFixed(2)
+            span.textContent = (currentVal * transVal).toFixed(2)
         }
 
         select.addEventListener('change', function(e){
             const options = e.currentTarget.options
             const index = e.currentTarget.options.selectedIndex
-            transVal = options[index].value
+            transVal = options[index].value //선택한 select 박스의 value
             calculate()
         })
 
