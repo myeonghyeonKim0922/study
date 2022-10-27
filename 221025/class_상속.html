@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //객체 = 속성 + 메소드
+        class Rectangle {
+            constructor (width, height) {
+                console.log(width)
+                console.log(height)
+                //속성
+                this.width = width
+                this.height = height
+            }
+            //메소드
+            //사각형의 둘레 구하기
+            getPerimeter () {
+                return 2 * (this.width + this.height)
+            }
+
+            //사각형의 넓이 구하기
+            getArea () {
+                return this.width * this.height
+            }
+        }
+
+        class Square extends Rectangle {
+            constructor (length, length2) {
+            // console.log(length, length2)
+                super(length, length2) //super:부모의 생성자 함수를 호출
+
+            }
+           
+        }
+        // const rect = new Rectangle(10, 20)
+        // console.log(rect.getPerimeter())
+        // console.log(rect.getArea())
+
+        const square = new Square(10, 20)
+        console.log(square.width)
+        console.log(square.getArea())
+        console.log(square.getPerimeter())
+
+    </script>
+</body>
+</html>
